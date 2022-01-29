@@ -11,7 +11,6 @@
 #include "../FileLoader.cpp"
 #include "../StringHelper.cpp"
 #include "../StringHelper.h"
-#include "../main.cpp"
 #include "../day1.cpp"
 
 TEST(day1_test_1, debug) {
