@@ -9,7 +9,10 @@
 #include <gtest/gtest.h>
 #include "../day1.h"
 #include "../day1.cpp"
-#include "../."
+#include "../FileLoader.cpp"
+#include "../StringHelper.cpp"
+#include "../StringHelper.h"
+#include "../input.txt"
 
 TEST(day1_test_1, debug) {
     // DUMMY Test
