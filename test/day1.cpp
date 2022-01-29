@@ -7,7 +7,7 @@
 #include <iostream>
 #include <list>
 #include <algorithm>    // find
-#include <../main.cpp>
+#include "../main.cpp"
 
 using namespace std;
 
