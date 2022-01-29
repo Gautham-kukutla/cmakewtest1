@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include </day1.h>
+#include <cmakewtest1/day1.h>
 
 TEST(day1_test_1, debug) {
     // DUMMY Test
