@@ -18,6 +18,6 @@ pipeline {
 		  steps{
 			  bat 'cd build && test/debug/mytest --gtest_output="xml:testresults.xml"'
 			  
-		  }}}}
+		  }}
   }}
 
