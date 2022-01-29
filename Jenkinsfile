@@ -16,7 +16,7 @@ pipeline {
 	  
   	stage('gtest'){
 		  steps{
-			  bat "cd build/test/debug && mytest <input.txt --gtest_output=xml:testresults.xml"
+			  bat "cd build/test/debug && mytest --gtest_output=xml:testresults.xml"
 			  
 		  }}
   }}
