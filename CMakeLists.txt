@@ -15,4 +15,4 @@ FetchContent_MakeAvailable(googletest)
 
 add_executable("${PROJECT_NAME}" main.cpp  day1.cpp StringHelper.cpp FileLoader.cpp)
 target_link_libraries("${PROJECT_NAME}" gtest_main)
-add_test(NAME example_test COMMAND "${PROJECT_NAME}")
+add_test(NAME mytest COMMAND "${PROJECT_NAME}")
