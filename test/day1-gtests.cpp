@@ -12,6 +12,7 @@
 #include "../FileLoader.cpp"
 #include "../StringHelper.cpp"
 #include "../StringHelper.h"
+#include "../main.cpp"
 
 TEST(day1_test_1, debug) {
     // DUMMY Test
