@@ -17,7 +17,7 @@ int findValue()
     int value;
     int target_value;
     // input
-    auto retList = FileLoader::ReadIntListFromFile("../input.txt");
+    auto retList = FileLoader::ReadIntListFromFile("cmakewtest1/input.txt");
 
     // iterative loop
     for (auto it = retList.begin(); it != retList.end(); it++)
