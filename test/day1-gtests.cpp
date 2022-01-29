@@ -6,13 +6,14 @@
 #include <string>
 #include <algorithm>    // find
 #include "../Fileloader.h"
-#include <gtest/gtest.h>
 #include "../day1.h"
 #include "../FileLoader.cpp"
 #include "../StringHelper.cpp"
 #include "../StringHelper.h"
-#include "../day1.cpp"
+
 */
+#include <gtest/gtest.h>
+#include "../day1.cpp"
 
 TEST(day1_test_1, debug) {
     // DUMMY Test
