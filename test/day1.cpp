@@ -2,8 +2,8 @@
 // Created by Ernst, Michael on 11.12.2020.
 //
 
-#include <day01/day1.h>
-#include <utilslib/Fileloader.h>
+#include "../day1.h"
+#include "../Fileloader.h"
 #include <iostream>
 #include <list>
 #include <algorithm>    // find
@@ -17,7 +17,7 @@ int findValue()
     int value;
     int target_value;
     // input
-    auto retList = FileLoader::ReadIntListFromFile("input.txt");
+    auto retList = FileLoader::ReadIntListFromFile("../input.txt");
 
     // iterative loop
     for (auto it = retList.begin(); it != retList.end(); it++)
