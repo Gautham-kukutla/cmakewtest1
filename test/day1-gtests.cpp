@@ -13,6 +13,7 @@
 #include "../StringHelper.h"
 #include "../day1.cpp"
 
+
 TEST(day1_test_1, debug) {
     // DUMMY Test
     ASSERT_EQ(findValue(), 605364);
