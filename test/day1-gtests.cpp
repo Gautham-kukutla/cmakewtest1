@@ -4,6 +4,7 @@
 
 #include <gtest/gtest.h>
 #include "../day1.h"
+#include "../day1.cpp"
 
 TEST(day1_test_1, debug) {
     // DUMMY Test
