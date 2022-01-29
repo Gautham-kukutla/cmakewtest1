@@ -15,7 +15,7 @@ pipeline {
 		  }}
 	  stage('gtest'){
 		  steps{
-			  bat "cd build && test/sample_tests --gtest_output="xml:testresults.xml""
+			  bat "cd build && test/sample_tests --gtest_output='xml:testresults.xml'"
 			  junit allowEmptyResults: true, skipMarkingBuildUnstable: true, testResults: '**/testresults.xml'
 			  
   }}
