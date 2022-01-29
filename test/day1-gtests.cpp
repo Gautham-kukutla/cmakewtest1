@@ -8,7 +8,6 @@
 #include "../Fileloader.h"
 #include <gtest/gtest.h>
 #include "../day1.h"
-#include "day1.cpp"
 #include "../FileLoader.cpp"
 #include "../StringHelper.cpp"
 #include "../StringHelper.h"
