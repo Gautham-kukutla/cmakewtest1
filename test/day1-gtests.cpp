@@ -1,17 +1,9 @@
-//
-// Created by Ernst, Michael on 11.12.2020.
-//
-/*#include <iostream>
+
+#include <iostream>
 #include <list>
 #include <string>
-#include <algorithm>    // find
-#include "../Fileloader.h"
-#include "../day1.h"
-x
 
-#include "../StringHelper.h"
 
-*/
 #include "../StringHelper.cpp"
 #include "../Fileloader.cpp"
 #include "../day1.h"
