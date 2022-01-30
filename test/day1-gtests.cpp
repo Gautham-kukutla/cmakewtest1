@@ -5,12 +5,12 @@
 
 
 #include "../StringHelper.cpp"
-#include "../Fileloader.cpp"
+#include "../FileLoader.cpp"
 #include "../day1.h"
 #include "../StringHelper.h"
 #include <gtest/gtest.h>
 #include "../day1.cpp"
-#include "../Fileloader.h"
+#include "../FileLoader.h"
 
 TEST(day1_test_1, debug) {
     // DUMMY Test
