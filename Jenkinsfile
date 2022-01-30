@@ -10,21 +10,23 @@ pipeline {
 		   }  }
 	  stage('Cppcheck'){
 		  steps{
+			  script{
 			   if (isUnix()) {
     				sh "cppcheck  --xml --xml-version=2 . 2> cppcheck.xml"
-} if {
+} else {
 			  bat "cppcheck  --xml --xml-version=2 . 2> cppcheck.xml"
-			   }
+			   }}
 			  publishCppcheck allowNoReport: true, pattern: '**/cppcheck.xml'
 		  }}
 	  
   	stage('gtest'){
 		  steps{
+			  script{
 			  if (isUnix()) {
 				  sh "cd build/test/debug && mytest --gtest_output=xml:testresults.xml"
-				  if(iswindows(){
+				  else{
 			  bat "cd build/test/debug && mytest --gtest_output=xml:testresults.xml"
-				  }
+				  }}
 		  }}
   }}
 
