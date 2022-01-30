@@ -23,8 +23,7 @@ pipeline {
 		  steps{
 			  script{
 			  if (isUnix()) {
-				  sh "cd /var/lib/jenkins/workspace/cmaketestl1/build/test "
-				  sh "wine mytest --gtest_output=xml:testresults.xml"
+				  sh "cd /var/lib/jenkins/workspace/cmaketestl1/build/test && ./mytest --gtest_output=xml:testresults.xml"
 			  }
 				  else{
 			  bat "cd build/test/debug && mytest --gtest_output=xml:testresults.xml"
