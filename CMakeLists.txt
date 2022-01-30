@@ -12,7 +12,7 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-
+include_directories(${PROJECT_SOURCE_DIR})
 add_executable("${PROJECT_NAME}" main.cpp  day1.cpp StringHelper.cpp FileLoader.cpp)
 target_link_libraries("${PROJECT_NAME}" gtest_main)
 add_test(NAME mytest COMMAND "${PROJECT_NAME}")
