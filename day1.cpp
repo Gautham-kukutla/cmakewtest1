@@ -7,7 +7,7 @@
 #include <list>
 #include <algorithm>    // find
 #include "day1.h"
-#include "Fileloader.h"
+#include "FileLoader.h"
 
 using namespace std;
 
