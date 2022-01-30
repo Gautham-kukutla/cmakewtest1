@@ -16,7 +16,7 @@ pipeline {
 	  
   	stage('gtest'){
 		  steps{
-			  bat "cd build/test/debug && mytest input --gtest_output=xml:testresults.xml"
+			  bat "cd build/test/debug && mytest cmakewtest1/input.txt --gtest_output=xml:testresults.xml"
 			  
 		  }}
   }}
