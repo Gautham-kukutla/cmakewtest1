@@ -23,7 +23,7 @@ pipeline {
 		  steps{
 			  script{
 			  if (isUnix()) {
-				  sh "cd build/test/debug && mytest --gtest_output=xml:testresults.xml"
+				  sh "cd build/test/debug && mytest --gtest_output=xml:testresults.xml"}
 				  else{
 			  bat "cd build/test/debug && mytest --gtest_output=xml:testresults.xml"
 				  }}
