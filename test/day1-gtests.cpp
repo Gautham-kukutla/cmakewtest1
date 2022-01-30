@@ -7,11 +7,13 @@
 #include <algorithm>    // find
 #include "../Fileloader.h"
 #include "../day1.h"
-#include "../FileLoader.cpp"
-#include "../StringHelper.cpp"
+x
+
 #include "../StringHelper.h"
 
 */
+#include "../StringHelper.cpp"
+#include "../StringHelper.cpp"
 #include "../day1.h"
 #include "../StringHelper.h"
 #include <gtest/gtest.h>
