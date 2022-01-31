@@ -1,6 +1,8 @@
 include_directories(${gtest_SOURCE_DIR}/include)
 include_directories(${PROJECT_SOURCE_DIR})
+include_directories(${PROJECT_SOURCE_DIR}/test)
 add_executable(mytest day1-gtests.cpp)
 CONFIGURE_FILE(input.txt build/test/debug COPYONLY)
 target_include_directories(mytest PUBLIC CMAKE_SOURCE_DIR test)
 target_link_libraries(mytest gtest_main)
+target_include_directories(mytest ${PROJECT_SOURCE_DIR}/test)
