@@ -3,15 +3,14 @@ pipeline {
 
   stages {
 	  stage('Building and gtesting'){
-		  agent { label('windows || linux') }
-		  
+				  
 		  steps{
 	    
 	cmakeBuild buildDir: 'build', installation: 'InSearchPath', steps: [[withCmake: true]]
 	
 		   }  }
 	  stage('Cppcheck'){
-		  agent { label('windows || linux') }
+		 
 		  steps{
 			  script{
 			   if (isUnix()) {
@@ -23,7 +22,7 @@ pipeline {
 		  }}
 	  
   	stage('gtest'){
-		agent { label('windows || linux') }
+		
 		  steps{
 			  script{
 			  if (isUnix()) {
