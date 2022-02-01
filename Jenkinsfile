@@ -26,12 +26,11 @@ pipeline {
 		  steps{
 			  script{
 			  if (isUnix()) {
-				  sh "cd /var/lib/jenkins/workspace/cmaketestl1/build/test && ./mytest "
-				  sh "set +e"
+				  sh "cd /var/lib/jenkins/workspace/cmaketestl1/build/test && ./mytest set +e"
 			  }
 				  else{
-			  bat "cd build/test/debug && mytest "
-			  bat "set +e"
+			  bat "cd build/test/debug && mytest set +e"
+			  
 				  }}
 		  }}
   }}
